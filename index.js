@@ -14,15 +14,17 @@ function logWhisper(string) {
   console.log(string.toLowerCase())
 }
 
-var lowercase = "hello";
+
 function sayHiToGrandma(string) {
-  if(lowercase.toLowerCase() === lowercase) {
+  switch(string) {
+  case "hello":
     return "I can\'t hear you!";
-  }
-  if (lowercase.toUpperCase() === uppercase) {
+    break;
+  case "HELLO":
     return "YES INDEED!";
-  }
-  if (string === "I love you, Grandma!") {
+    break;
+  case "I love you, Grandma!":
     return "I love you, too!";
+    break;
   }
 }
